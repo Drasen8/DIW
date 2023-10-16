@@ -1,0 +1,31 @@
+/*Alinear el texto de las celdas, cabeceras y título. Definir los bordes de la tabla,
+celdas y cabeceras (color gris oscuro #333):*/
+table,th, td{
+    border: 2px solid;
+    border-color: #333;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+img.logo{
+    width: 15%;
+    height: 15%;
+}
+img{
+    width: 4%;
+    height: 4%;
+}
+th.cabecera{
+    background-image: url("../Imagenes/fondo_gris.gif");
+}
+th.columna{
+    background-color: #E6F3FF;
+}
+table{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+tr:nth-child(even) {
+    background-color: #FFFFCC;
+  }
+tr:hover {background-color: #FFFF66;}
