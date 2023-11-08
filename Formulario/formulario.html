@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form id="registro" method="post"> 
+        <h1>Regístrate!</h1>
+        <div id="contenedor">
+    <label>Mi nombre es:</label>
+    <input name="nombre" type="text" autofocus required><image src="/imgs/required.png"></image>
+    <label>Mi email es:</label>
+    <input name="email" type="email" required><image src="/imgs/required.png"></image>
+    <label>Recuérdame en este equipo</label>
+    <input name="eleccion" type="checkbox" name="Recuerdame">
+    <label>Mi dirección web es:</label>
+    <input name="url" type="url" value="http://ejemplo.com">
+    <label>Me gustaría que mi password fuera:
+            (al menos 6 caracteres, sin espacios)
+    </label>
+    <input name="password1" type="text" minlength="6" required><image src="/imgs/required.png"></image>
+    <label>Mi password repetida es:</label>
+    <input name="password2" type="text" minlength="6" required><image src="/imgs/required.png"></image>
+    <label>En una escala de 1 a 10, mis conocimientos de HTML5 son:</label>
+    <input name="conocimientos"type="number" min="1" max="10">
+    <label>Por favor, inicia mi suscripción del día:</label><input name="fechaInicio" type="date" value="dd/mm/aaaa"><label>Me gustaría recibir </label>
+    <input type="number" min="0" max="5" value="1" required><image src="/imgs/required.png"></image>
+    <label>copias de El manual de HTML5.</label>
+    <label>Tambien regístrame para El manual de CSS3.</label>
+    <button class="enviar">ENVÍAME</button>
+    </div>
+    
+    </form>
+</body>
+</html>

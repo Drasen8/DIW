@@ -1,0 +1,79 @@
+*{
+    color: black;
+}
+#registro{
+    padding: auto;
+    padding-top:10px;
+    padding-bottom:10px;
+    border: solid 2px #888;
+    width: 710px;
+    text-align: center;
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 20%);
+    background-image: url(/imgs/bg-form.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+#contenedor {
+    margin-bottom:15px;
+}
+label{
+    display: block;
+    margin: auto;
+    text-align: center;
+    color: black;
+    font-family: LeagueGothic;
+}
+h1{
+    font-size: 2em;
+    padding-bottom: 20px;
+    color: black;
+    background:
+    url("../imgs/bg-formtitle-left.png") left no-repeat,
+    url("../imgs/bg-formtitle-right.png") right no-repeat;
+    background-size: 100px;
+    font-family: AcknowledgementMedium;
+}
+.enviar{
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    background: radial-gradient( rgb(144, 144, 144),  rgb(72, 72, 72));
+    color: white;
+    font-size: 2em;
+    font-family:  Tahoma, Geneva, sans-serif;
+    opacity: 80%;
+    width: auto;
+    height: auto;
+}
+.enviar:hover{
+    opacity: 100%;
+    transition: linear 0.25s;
+}
+input::selection {
+    background-color: #484848; 
+    color: #fff;
+    text-shadow: none; 
+}
+input:valid:focus{
+    background: url("../imgs/valid.png") right no-repeat;
+}
+input:invalid:focus{
+    background: url("../imgs/invalid.png") right no-repeat;
+}
+button{
+    font-family: LeagueGothic;
+}
+@font-face {
+    font-family:LeagueGothic ;
+    src: url("../fuentes/League_Gothic/LeagueGothic-Regular-VariableFont_wdth.ttf");
+}
+@font-face {
+    font-family:AcknowledgementMedium ;
+    src: url("../fuentes/acknowledgement/Acknowledgement.otf");
+}
+input{
+    border: none;
+    border-bottom: 1px dotted #000;
+    background: transparent;
+    outline: none;
+}
