@@ -1,0 +1,222 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    padding-top: 20px;
+    text-align: center;
+}
+
+#page {
+    width: 960px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+#header{
+    font-family: 'Courier New', Times, serif;
+    color: #ffffff;
+    border-bottom: solid;
+    border-color: black;
+    background-color: #313B44;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    
+}
+#header h1{
+    align-items: center;
+    background-position: 50px 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
+    text-align: center;
+}
+#nav{
+    font-family: Courier;
+    color: silver;
+    font-size: 1.4em;
+    text-align: center;
+}
+#nav li {
+    padding-top: 80px;
+    margin-top: 0px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    text-align: center;
+    display: inline-block;
+    list-style-type: none;
+    cursor: default;
+}
+li a{
+    color: orange;
+}
+
+li a:hover {
+    color: white;
+    transition: 0.2;
+}
+#book{
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 10px;
+    background-image: url("../imgs/book.png");
+}
+#film{
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 10px;
+    background-image: url("../imgs/film.png");
+}
+#mail{
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 10px;
+    background-image: url("../imgs/mail.png");
+}
+.clearfix:before,
+.clearfix:after,
+#content{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8em;
+    background-image: url("../imgs/lgrey008.jpg");
+    overflow:hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+}
+.article{
+    width: auto;
+    border: solid;
+    border-radius: 1px;
+    border-color: lightgray;
+    background-color: #ffffff;
+    line-height: 1.8;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    margin: 30px;
+    margin-left: 5%;
+    float:left;
+    text-align: center;
+}
+.article_header{
+    border-bottom: solid;
+    border-color: #999999;
+    border-radius: 1px;
+}
+h2{
+    padding:10px;
+    font-size: 1.2em;
+}
+#footer{
+    color: #ffffff;
+    font-size: 0.7em;
+    text-align: center;
+    background-color: #313B44;
+    border-top: solid;
+    border-color: black;
+    border-radius: 6px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+/*logo*/
+.pequeña{
+    width: 100px;
+    height: 100px;
+    
+}
+/*Lateral*/
+#div{
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left: 0;
+    width: 100px;
+    background-color: aqua;
+}
+/*submenu*/
+#productos {
+    align-items: center;
+    background-position: 10px 10px;
+}
+.submenu {
+    position: relative;
+}
+
+.submenu>ul>li>a {
+    color: white;
+    margin: auto;
+    text-decoration: none;
+}
+
+.submenu>ul {
+    position: absolute;
+    left: -82px;
+    height: 0px;
+    overflow: hidden;
+    width: 45px;
+    transition: height linear .3s;
+    z-index: 2;
+}
+
+.submenu:hover>ul {
+    height: 300px;
+    width: 200px;
+}
+
+.submenu>ul>li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    margin: 0px;
+    background-color: #e34c26;
+}
+
+.submenu>ul>li:nth-child(odd) {
+    background-color: #f06529;
+}
+
+
+.submenu>ul>li:hover {
+    background-color: #ff7e42;
+}
+
+.submenu>ul>li:first-child {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    margin-top: 25px;
+    position: relative;
+}
+
+.submenu>ul>li:last-child {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+#productos{
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 30%;
+    top: 40%;
+    background-color: #29f0f0;
+}
+th,td{
+    border: 2px solid;
+border-color: black;
+
+}
+#lateral{
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    right:0%;
+    top: 0%;
+    background-color: #cfd1aa;
+    
+}
