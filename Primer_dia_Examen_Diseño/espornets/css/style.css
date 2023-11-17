@@ -5,10 +5,13 @@
 body{
     padding-top: 20px;
     text-align: center;
+    width: 100%;
+    height: 1000px;
 }
 
 #page {
-    width: 960px;
+    width: 100%;
+    height: 100%;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: auto;
@@ -86,12 +89,13 @@ li a:hover {
     background-image: url("../imgs/lgrey008.jpg");
     overflow:hidden;
     width: 100%;
+    height: 680px;
     display: flex;
     flex-direction: row;
     
 }
 .article{
-    width: auto;
+    width: 300px;
     border: solid;
     border-radius: 1px;
     border-color: lightgray;
@@ -102,7 +106,7 @@ li a:hover {
     padding-top: 5px;
     padding-bottom: 20px;
     margin: 30px;
-    margin-left: 5%;
+    margin-left: 18%;
     float:left;
     text-align: center;
 }
@@ -142,11 +146,19 @@ h2{
     background-color: #cfd1aa;
     
 }
-/*submenu*/
 #productos {
     align-items: center;
     background-position: 10px 10px;
 }
+
+#submenu {
+    /*El padre marca origen de las coordenadas*/
+    position: relative;
+}
+
+
+/*submenu*/
+
 .submenu {
     position: relative;
 }
@@ -199,4 +211,10 @@ h2{
 .submenu>ul>li:last-child {
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
+}
+
+.titulo{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    color: black;
 }

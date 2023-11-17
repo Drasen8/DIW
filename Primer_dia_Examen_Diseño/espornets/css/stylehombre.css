@@ -5,10 +5,13 @@
 body{
     padding-top: 20px;
     text-align: center;
+    width: 100%;
+    height: 1000px;
 }
 
 #page {
-    width: 960px;
+    width: 100%;
+    height: 100%;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: auto;
@@ -86,12 +89,13 @@ li a:hover {
     background-image: url("../imgs/lgrey008.jpg");
     overflow:hidden;
     width: 100%;
+    height: 680px;
     display: flex;
     flex-direction: row;
     
 }
 .article{
-    width: auto;
+    width: 300px;
     border: solid;
     border-radius: 1px;
     border-color: lightgray;
@@ -102,7 +106,7 @@ li a:hover {
     padding-top: 5px;
     padding-bottom: 20px;
     margin: 30px;
-    margin-left: 5%;
+    margin-left: 18%;
     float:left;
     text-align: center;
 }
@@ -133,12 +137,14 @@ h2{
     
 }
 /*Lateral*/
-#div{
-    margin-bottom: 0;
-    margin-top: 0;
-    margin-left: 0;
+#lateral{
+    position: absolute;
     width: 100px;
-    background-color: aqua;
+    height: 100%;
+    right:0%;
+    top: 0%;
+    background-color: #cfd1aa;
+    
 }
 /*submenu*/
 #productos {
@@ -198,25 +204,26 @@ h2{
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
 }
+
+.titulo{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    color: black;
+}
+table{
+    width: 100%;
+    height: 680px;
+}
 #productos{
-    position: absolute;
-    width: auto;
-    height: auto;
-    left: 30%;
-    top: 40%;
+    position: relative;
+    width: 94.66%;
+    height: 680px;
+    left: 0%;
+    top: 0%;
     background-color: #29f0f0;
 }
 th,td{
     border: 2px solid;
 border-color: black;
-
-}
-#lateral{
-    position: absolute;
-    width: 100px;
-    height: 100%;
-    right:0%;
-    top: 0%;
-    background-color: #cfd1aa;
-    
+border-collapse: collapse;
 }
