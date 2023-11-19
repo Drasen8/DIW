@@ -231,10 +231,32 @@ img{
     display: flex;
     flex-direction: column;
     position:relative;
+    width: 20%;
+    display: flex;
+    flex-direction: block;
+    left:36%;
+    text-align: center;
+    border: solid 10px #7b45d8;
+    border-radius: 10% 10% 10% 10% ;
+    padding: 2%;
+    background: linear-gradient(white, green);
+    margin: 2%;
 }
 label{
     color:black;
 }
 h2{
     color:black;
+}
+.enviar{
+    position: relative;
+margin:10%;
+width: 100px;
+height: 100px;
+left: 25%;
+border-radius: 50% 50% 50% 50% ;
+border: solid 6px #7b45d8;
+}
+.enviar:hover{
+    background-color:  #d2bff3;
 }
