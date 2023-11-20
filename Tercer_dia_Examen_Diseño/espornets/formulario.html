@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleformulario.css">
+    <title>ESPORTNET</title>
+</head>
+<body>
+    
+    <div id="page">
+    <div class="lateral">
+        <lu >
+        <li><a href="dondesea">Enlaces</a></li>
+        <li><a href="dondesea">de </a></li>
+        <li><a href="dondesea">Interes</a></li>
+        <li><a href="dondesea">uuuu</a></li>
+</lu>
+<lu>
+    <li><a href="dondesea">Relacionados</a></li>
+    <li><a href="dondesea">con </a></li>
+    <li><a href="dondesea">la</a></li>
+    <li><a href="dondesea">tienda</a></li>
+</lu>
+    </div>
+        <div id="header">
+            <image class="pequeña"  src="../espornets/img/espornets.png"></image></a><h1>ESPORTNET</h1>
+            
+        </div>
+        <div id="nav">
+            <a class="elementonav" href="index.html">Home</a>
+            <ul>
+                <li id="hombre" class="submenu"><a>productos</a>
+                    <ul>
+                        <li><a href="hombre.html">Hombre</a></li>
+                        <li><a href="mujer.html">Mujer </a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a class="elementonav" href="formulario.html">Formulario</a>
+            <ul>
+                <li id="hombre" class="submenu"><a>Videos</a>
+                    <ul>
+                        <li><a href="video1.html">Video1</a></li>
+                        <li><a href="video2.html">Video2 </a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+            <form id="registro" method="post"> 
+                <div id="content">
+                <div id="contenedorform">
+                    <h2>Datos de compra</h2>
+            <label>Mi nombre y apellidos:</label>
+            <input name="nombreApellidos" type="text" autofocus required>
+            <hr>
+            <label>Mi DNI es:</label>
+            <input class="cl-validate-dni" type="text" name="dni" placeholder="Introduzca su DNI" pattern="[0-9]{8}[A-Za-z]{1}" title="Debe poner 8 números y una letra" minlength="9" maxlength="9" />
+            <hr>
+            <label>Mi correo electronico es:</label>
+            <input name="email" type="email" required>
+            <hr>
+            <label>Mi fecha de nacimiento es:</label>
+            <input name="fechaNacimiento" type="date" value="dd/mm/aaaa" required>
+            <hr>
+            <label>Mis telefonos:</label>
+            <input name="telefonos" type="multiple"  required>
+            
+            <hr>
+            <label>Selecciona el codigo del producto:</label>
+            <select name="codigo" required>
+                <option value="ZM-120-RUN">ZM-120-RUN</option>
+                <option value="ZM-150-PRO">ZM-150-PRO</option>
+                <option value="ZM-120-SUP">ZM-120-SUP</option>
+                <option value="ZM-120-PRO">ZM-120-PRO </option>
+                </select>
+            <hr>
+            <label>Selecciona color:</label>
+            <input type="color" value="color" required>
+            <hr>
+            <label>Cuantas quieres comprar:</label>
+            <input type="number" min="0" value="1" required>
+            <hr>
+            
+            <button class="enviar">ENVÍAME</button>
+            </div>
+            </div>
+        <div id="footer">
+        <p>ESPORNETS - Calzado deportivo de calidad para todos.</p>
+        </div>
+    </div>
+    
+</body>
+</html>
