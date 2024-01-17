@@ -1,0 +1,115 @@
+// Variables
+$color-texto: #eee;
+$color-texto-hover: #fff;
+$color-fondo: #666;
+$color-fondo-hover: #888;
+
+// Mixins
+@mixin colores($color-texto, $color-fondo) {
+  color: $color-texto;
+  background-color: $color-fondo;
+}
+
+@mixin colores-hover($color-texto-hover, $color-fondo-hover) {
+  &:hover {
+    @include colores($color-texto-hover, $color-fondo-hover);
+    
+  }
+}
+
+@mixin box-sizing($tipo: border-box) {
+  -webkit-box-sizing: $tipo;
+  -moz-box-sizing: $tipo;
+  box-sizing: $tipo;
+}
+
+@mixin transiciones($property, $duration, $timing: linear) {
+  -moz-transition: $property $duration $timing;
+  -webkit-transition: $property $duration $timing;
+  transition: $property $duration $timing;
+}
+
+@mixin animacion($name, $duration, $timing: linear) {
+  -moz-animation: $name $duration $timing;
+  -webkit-animation: $name $duration $timing;
+  animation: $name $duration $timing;
+}
+
+// Estilos
+nav {
+  position: absolute;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+
+  ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+
+    > ul {
+      width: 100%;
+      height: 32px;
+      @include colores($color-texto, $color-fondo);
+    }
+
+    a {
+      @include colores($color-texto, $color-fondo);
+      text-decoration: none;
+      width: 160px;
+      padding: 7px 20px;
+      display: block;
+      text-align: center;
+      cursor: pointer;
+      @include transiciones(all, 0.4s);
+
+      @include colores-hover($color-texto-hover, $color-fondo-hover);
+    }
+
+    ul.submenu {
+      position: absolute;
+      height: 0px;
+      overflow: hidden;
+      @include transiciones(height, 0.5s, ease-out);
+    }
+
+    li.categoria {
+      float: left;
+
+      > a {
+        @include transiciones(padding, 0.4s, ease-out);
+      }
+
+      &:hover > a {
+        padding: 10px 20px;
+      }
+
+      &:hover ul.submenu {
+        height: 100px;
+      }
+    }
+  }
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+header {
+  padding: 12px 30px;
+  font-size: 1.8em;
+  color: #444;
+  background-color: #eee;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #aaa;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+footer {
+  @include colores($color-texto, $color-fondo);
+  @include box-sizing;
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  padding: 5px;
+}
