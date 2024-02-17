@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>Formulario - Marc Sendra</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+    <header>
+    </header>
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="navbar.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="forms.html">Pedidos</a>
+                        </li>
+                        <div class="row">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Productos
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Hombre</a></li>
+                                    <li><a class="dropdown-item" href="#">Mujer</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="container">
+            <form role="form">
+                <br>
+                <div class="row">
+                    <div class="col-2">
+                        <label for="exampleInputNombre1">
+                            Nombre
+                        </label>
+                        <input type="text" class="form-control" id="exampleInputNombre1" />
+                    </div>
+                    <div class="col-2">
+                        <label for="exampleInputApellido1">
+                            1ºApellido
+                        </label>
+                        <input type="text" class="form-control" id="exampleInputApellido1" />
+                    </div>
+                    <div class="col-2">
+                        <label for="exampleInputApellido2">
+                            2ºApellido
+                        </label>
+                        <input type="text" class="form-control" id="exampleInputApellido2" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <label for="exampleInputEmail">
+                            Correo electrónico:
+                        </label>
+                        <input type="email" class="form-control" id="exampleInputEmail" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <label for="exampleInputSelect">
+                            Seleccionar producto:
+                        </label>
+                        <br>
+                        <select class="form-select" multiple aria-label="Default select example"
+                            id="exampleInputSelect">
+                            <option value="1">Producto 1</option>
+                            <option value="2">Producto 2</option>
+                            <option value="3">Producto 3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <label for="exampleColorInput" class="form-label">Elige color del envoltorio</label>
+                        <input type="color" class="form-control form-control-color" id="exampleColorInput"
+                            value="#563d7c" title="Choose your color">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <label for="customRange1" class="form-label">Cantidad de producto (1-5)</label>
+                        <input type="range" class="form-range" id="customRange1" min="1" max="5">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <label for="formFile" class="form-label">Default file input example</label>
+                        <input class="form-control" type="file" id="formFile">
+                    </div>
+                </div>
+                <br>
+                <button type="submit" class="btn btn-primary">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
