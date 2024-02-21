@@ -1,0 +1,100 @@
+/*Colores*/
+.verde{
+    background-color: #29ff2b;
+}
+*{
+    height: auto;
+    margin:0px;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+}
+.body{
+    position: absolute;
+    height: 10000px;
+    width: 100%;
+    bottom: 0px;
+}
+.container-fluid {
+    max-height: 200px;
+  }
+
+/*media query pantalla grande */
+  @media (min-width:769px){
+     .rowHeader{
+        background-color: #29ff2b;
+        font-size: 24px;
+        font-style: italic;
+        
+    }
+
+    
+
+     .rowBody{
+        font-size: 48px;
+        text-align: center;
+        
+    } 
+
+    main{
+        height: auto;
+    } 
+
+     .altura{
+        font-size: 40px;
+        margin:0px;
+    } 
+    
+    .Footer{
+        background-color: orange;
+    }
+    
+} 
+ 
+/*media query pantalla mediana */
+@media (max-width:768px){
+    .rowHeader{
+        background-color: #2dfdfd;
+        font-size: 24px;
+        font-style: italic;
+    }
+    .altura{
+        font-size: 20px;
+    }
+    main{
+        height: auto;
+    }
+    .rowBody{
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .Footer{
+        background-color: orange;
+    }
+}
+
+/*media query pantalla pequeña*/
+@media(max-width:576px){
+    .rowHeader{
+        background-color: #fcb485;
+        font-size: 24px;
+        text-align: center;
+        font-style: italic;
+    }
+
+    .altura{
+        font-size: 20px;
+    }
+
+    .rowBody{
+        font-size: 60px;
+        text-align: center;
+    }
+
+    
+}
+.container{
+        max-width: 100%;
+    }
